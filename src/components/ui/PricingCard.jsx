@@ -40,6 +40,7 @@ function PricingCard({ serviceName, packageName, priceTag, serviceList }) {
             pricingBtnColor="#4334B6"
             pricingTxtCenter="center"
             pricingLgWidth="lg:w-full"
+            href = "/contact#root"
           />
         </div>
       </div>

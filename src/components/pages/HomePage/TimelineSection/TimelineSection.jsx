@@ -17,15 +17,16 @@ function TimelineSection() {
       >
         <div className="topLeftBluePulseBlock">
           <img src={bluePulseImg} alt="bluePulseImg" />
-        </div>
+        </div> 
         <div className="centerRightBluePulseBlock">
           <img src={bluePulseImg} alt="bluePulseImg" />
         </div>
         <div className="bottomLeftBluePulseBlock">
           <img src={bluePulseImg} alt="bluePulseImg" />
         </div>
+        
         <PrimaryHeading
-          headingText="From Concept to Completion: Our Process for Crafting Digital Experiences"
+          headingText="Transforming Ideas into Digital Reality: Your Web Design Timeline"
           custColor="#fff"
           timelineHeading="lg:w-[70%] lg:mx-auto"
         />
@@ -34,59 +35,78 @@ function TimelineSection() {
           <TimelineSteps
             stepsContent={{
               Steps: "Step 1",
-              Heading: "Planning",
-              SubHeading: "Planning and brainstroming strategy",
+              Heading: "Discovery Meeting",
+              SubHeading: "We begin with an in-depth discovery meeting to understand your business, goals, and vision for your website.",
               lowerCol: "md:relative pointRight",
             }}
           />
           <TimelineStepsLeft
             stepsContent={{
               Steps: "Step 2",
-              Heading: "Communicate",
+              Heading: "Design Mock-ups",
               SubHeading:
-                "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+                "Our designers create initial mock-ups, giving you a visual feel of your future website.",
               lowerCol: "md:relative md:top-[111px] pointLeft",
             }}
           />
           <TimelineSteps
             stepsContent={{
               Steps: "Step 3",
-              Heading: "Create",
+              Heading: "Feedback & Revisions",
               SubHeading:
-                "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+                "We welcome your feedback on these mock-ups and make revisions to ensure they align perfectly with your vision.",
               lowerCol: "md:relative pointRight",
             }}
           />
           <TimelineStepsLeft
             stepsContent={{
               Steps: "Step 4",
-              Heading: "Turnover",
+              Heading: "Bringing Designs to Life",
               SubHeading:
-                "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+                "Our development team transforms these designs into a functional, user-friendly website.",
               lowerCol: "md:relative md:top-[111px] pointLeft",
             }}
           />
           <TimelineSteps
             stepsContent={{
               Steps: "Step 5",
-              Heading: "Design",
+              Heading: "CMS-Driven Content Crafting",
               SubHeading:
-                "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+                "We craft engaging content using a CMS, ensuring easy updates and brand-aligned storytelling on your site.",
               lowerCol: "md:relative pointRight",
             }}
           />
           <TimelineStepsLeft
             stepsContent={{
               Steps: "Step 6",
-              Heading: "Maintenance",
+              Heading: "Ensuring Excellence",
               SubHeading:
-                "Lorem ipsum dolor sit amet consectetur. Elit massa erat vitae non semper quis. ",
+                "Rigorous testing is conducted to ensure flawless functionality and user experience across all devices.",
+              lowerCol: "md:relative md:top-[111px] pointLeft",
+            }}
+          />
+          <TimelineSteps
+            stepsContent={{
+              Steps: "Step 7",
+              Heading: "Your Website Takes Flight",
+              SubHeading:
+                "The big moment where your website goes live - a digital embodiment of your business vision.",
+              lowerCol: "md:relative pointRight",
+            }}
+          />
+      
+               <TimelineStepsLeft
+            stepsContent={{
+              Steps: "Step 8",
+              Heading: "Ongoing Partnership",
+              SubHeading:
+                "Our journey doesn’t end at launch. We provide ongoing support to ensure your website continues to thrive.",
               lowerCol: "md:relative md:top-[111px] pointLeft",
             }}
           />
         </div>
         <div className="px-10">
-          <PrimaryButtonOutlined buttonlabel="Learn More" />
+          <PrimaryButtonOutlined buttonlabel="Learn More" href= "/contact#root" />
         </div>
       </section>
     </>

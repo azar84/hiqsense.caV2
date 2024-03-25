@@ -9,47 +9,62 @@ const pricingObj = [
   {
     service: "Web Design",
     package: "Startup Package",
-    cost: "$100",
+    cost: "$1500 CAD",
     list: [
-      "Domain Name - 1 Year",
-      "4-Static Pages Web Design",
-      "Hosting - 1 Year",
+      "Professional Website with Five Static Pages" ,
+      "CMS Backend for Effortless Content Management" ,
+      "Free Domain Name for One Year",
+      "Complimentary Web Hosting for One Year",
+      "Premiem UI Design",
       "5 Business Email Accounts",
+      "One Month of Free Support Post-Launch"
     ],
   },
   {
     service: "Web Design",
     package: "E-Commerce Package",
-    cost: "$100",
+    cost: "$3000 CAD",
     list: [
-      "Domain Name - 1 Year",
-      "Fully Functional E-Commerce with Admin Portal",
-      "Online Payment Integration",
-      "Hosting - 1 Year",
-      "5 Business Email Accounts",
+      "Free Domain Name for One Year",
+      "Free Web Hosting with SSL for One Year" ,
+      
+      "Integrated Shopping Cart and Secure Payment Gateways",
+      "Responsive Design for All Devices",
+      "Custom UI Design for Shopping Experience" ,
+      "Unlimited Products & Categories",
+      "Round-the-Clock Support for the First Month",
+     
     ],
   },
   {
     service: "Graphic Design",
-    package: "Logo and Graphic Design Package",
-    cost: "$100",
+    package: "Corporate Branding",
+    cost: "$500 CAD",
     list: [
-      "Logo Design",
+      "Three Creative Concepts",
       "Social Media Kit",
-      "3 Concepts",
-      "Stationary Design",
+      "Stationery and Mockup Designs",
+      "Extensive Brand Guidelines" , 
+      "Defined Color Palette & Typography",     
+      "Elegant Brand Book Design",
+      "3D mockups" ,
+      "All Editable and Source Files"
+      
     ],
   },
   {
     service: "SEO",
-    package: "Take Your Business to the Next Level with Business Plan",
-    cost: "Custom",
+    package: "SEO Pro",
+    cost: "$1000 CAD",
     list: [
-      "Page Audit",
-      "Research Keywords",
-      "Title Optimization",
+      "Site SEO Audit",
+      "Keywords Research",
+      "H1,H2, and H3 Tags",
+      "On-Page Optimization",
       "Meta Description",
-      "Site Map for Search Engines",
+      "Schema Markup" ,
+      "Submit Sitemap for Search Engines",
+      "Contents Rewriting"
     ],
   },
 ];
