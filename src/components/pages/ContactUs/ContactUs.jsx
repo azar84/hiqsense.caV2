@@ -30,9 +30,9 @@ const ContactUs = () => {
       <Container>
         <Link to="/booking">
           <div
-            className={`border border-btn-primary mt-4
+            className={`border border-btn-primary 
             text-[#F6393D] font-hebrew-bold tracking-[0.1px] px-6 py-2.5
-             rounded text-sm mx-2 lg:inline-block lg:px-20`}
+             rounded text-sm mx-2 lg:inline-block lg:px-20 my-12`}
             data-aos="fade-up"
             data-aos-duration="1500"
           >

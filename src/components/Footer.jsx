@@ -92,8 +92,8 @@ export default function MyFooter() {
     window.location.href = link;
   };
   return (
-    <footer className="flex flex-col pt-16">
-      <div className="flex flex-col items-center px-16 pb-6 mt-16 w-full bg-violet-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+    <footer className="flex flex-col ">
+      <div className="flex flex-col items-center px-16 pb-6  w-full bg-violet-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
         <div className="flex z-10 flex-col mt-0 w-full max-w-[1200px] max-md:max-w-full">
           <div className="flex flex-row px-5 py-12 rounded-xl max-md:px-5 max-md:max-w-full">
             <div className="flex flex-col grow text-white w-[65%] max-md:mt-10 max-md:max-w-full">
@@ -124,7 +124,7 @@ export default function MyFooter() {
           <div className="flex gap-5 mt-24 text-2xl font-bold text-white max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
             <img
               loading="lazy"
-              src= {logo}
+              src={logo}
               alt="Hiqsense Smart Sysytems"
               className="aspect-[7.69] w-[380px]"
             />
@@ -136,12 +136,12 @@ export default function MyFooter() {
             <ul className="flex gap-5 justify-between self-end mt-7 text-lg tracking-wide leading-5 text-stone-50 max-sm:mx-auto">
               {navItems.map((item) => (
                 <li
-                key={item.text}
-                className="max-sm:text-xs cursor-pointer"
-                onClick={() => handleNavItemClick(item.link)}
-              >
-                {item.text}
-              </li>
+                  key={item.text}
+                  className="max-sm:text-xs cursor-pointer"
+                  onClick={() => handleNavItemClick(item.link)}
+                >
+                  {item.text}
+                </li>
               ))}
             </ul>
             <div className="flex gap-4 self-start">
@@ -159,7 +159,7 @@ export default function MyFooter() {
           <div className="flex gap-5 mt-5 w-full text-white max-md:flex-wrap max-md:max-w-full">
             <ul className="flex gap-5 text-lg">
               {legalItems.map((item) => (
-                  <li
+                <li
                   key={item.text}
                   className="flex-auto max-sm:text-xs cursor-pointer"
                   onClick={() => handleLegalItemClick(item.link)}
