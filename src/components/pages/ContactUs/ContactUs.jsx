@@ -9,7 +9,6 @@ import Map from "./components/Map";
 
 import { Container } from "./components/Container";
 
-
 const cardVariants = {
   offscreen: {
     y: 300,
@@ -25,20 +24,29 @@ const cardVariants = {
 };
 
 const ContactUs = () => {
-
-
   return (
     <main className="pt-14 bg-[#F9F9F9] flex-1 min-h-[100dvh] w-full flex flex-col">
       <Banner />
       <Container>
+        <Link to="/booking">
+          <div
+            className={`border border-btn-primary mt-4
+            text-[#F6393D] font-hebrew-bold tracking-[0.1px] px-6 py-2.5
+             rounded text-sm mx-2 lg:inline-block lg:px-20`}
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Book Free Consultation
+          </div>
+        </Link>
         <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-x-10 justify-start px-1 md:px-3 py-9 lg:p-16 lg:pb-20">
           <div className="flex flex-col pt-5">
             <h1 className="text-4xl text-left font-bold text-[#0A0628]">
               Get in
               <span className="text-[#F6393D]">Touch</span>
             </h1>
+
             <ContactForm />
-          
           </div>
           <Map />
         </div>

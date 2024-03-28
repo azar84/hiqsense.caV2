@@ -1,12 +1,10 @@
 export default function Booking() {
   return (
-    <div style={{ position: "relative", padding: "5%" }}>
+    <div style={{ position: "relative", marginTop: "50px" }}>
       <iframe
+        src="https://outlook.office365.com/owa/calendar/hiqsense@hiqsense.ca/bookings/"
         width="100%"
-        height="750px"
-        src="https://bookings.hiqsense.com/portal-embed#/azar"
-        frameBorder="0"
-        allowfullscreen=""
+        height="1800px"
       ></iframe>
     </div>
   );
