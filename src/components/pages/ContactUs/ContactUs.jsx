@@ -27,7 +27,7 @@ const ContactUs = () => {
   return (
     <main className="pt-14 bg-[#F9F9F9] flex-1 min-h-[100dvh] w-full flex flex-col">
       <Banner />
-      <Container>
+      <Container >
         <Link to="/booking">
           <div
             className={`border border-btn-primary 
@@ -69,7 +69,7 @@ const ContactUs = () => {
           className=" min-h-[317px] flex flex-col items-center w-full max-w-[1200px] mx-auto "
           variants={cardVariants}
         >
-          <div className="w-full max-w-[755px] flex flex-col items-center gap-10 pt-4 pb-24 px-2 sm:px-6 text-white">
+          <div className="w-full max-w-[755px] flex flex-col items-center gap-10 pt-4 pb-32 px-2 sm:px-6 text-white">
             <h1 className="text-3xl sm:text-4xl md:text-5xl text-left font-bold ">
               {" "}
               Do You Have a Question?{" "}
@@ -83,7 +83,7 @@ const ContactUs = () => {
             </p>
             <Link
               to="/faq"
-              className="w-[137px] flex items-center justify-center rounded h-12 bg-[#F6393D] text-base font-bold mt-5"
+              className="w-[137px] flex items-center justify-center rounded h-12 bg-[#F6393D] text-base font-bold "
             >
               View FAQ
             </Link>

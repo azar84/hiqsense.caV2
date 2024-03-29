@@ -94,7 +94,7 @@ export default function MyFooter() {
   return (
     <footer className="flex flex-col md:relative">
       <div className="flex flex-col items-center px-16 pb-6  w-full bg-violet-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
-         <div className="flex z-10 flex-col items-center items-center mt-0 w-full max-w-[1200px] max-md:max-w-full md:items-start">
+         <div className="flex z-10 flex-col items-center items-center mt-0 w-full max-w-[1200px] max-md:max-w-full ">
           <div className="block md:absolute top-[-66px] w-[80%] flex flex-row px-5 py-6 rounded-xl max-md:px-5 max-md:max-w-full rounded-lg transform -translate-x-1/2-translate-y-1/2 bg-gradient-to-r from-red-600 via-purple-600 to-indigo-700">
             <div className="flex flex-col grow text-white w-[65%] max-md:mt-10 max-md:max-w-full">
               <h2 className="text-2xl text-start font-bold max-md:max-w-full">
