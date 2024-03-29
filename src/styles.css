@@ -13,10 +13,6 @@
   overflow: hidden;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer components {
   .hero-heading-styles {
     @apply font-garamond-semibold text-[32px] lg:text-[64px] text-center text-[#F9F9F9] mb-4 leading-tight md:w-[65%] lg:w-[50%];
