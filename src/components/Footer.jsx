@@ -92,12 +92,12 @@ export default function MyFooter() {
     window.location.href = link;
   };
   return (
-    <footer className="flex flex-col ">
+    <footer className="flex flex-col md:relative">
       <div className="flex flex-col items-center px-16 pb-6  w-full bg-violet-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
-        <div className="flex z-10 flex-col mt-0 w-full max-w-[1200px] max-md:max-w-full">
-          <div className="flex flex-row px-5 py-12 rounded-xl max-md:px-5 max-md:max-w-full">
+         <div className="flex z-10 flex-col items-center items-center mt-0 w-full max-w-[1200px] max-md:max-w-full md:items-start">
+          <div className="block md:absolute top-[-66px] w-[80%] flex flex-row px-5 py-6 rounded-xl max-md:px-5 max-md:max-w-full rounded-lg transform -translate-x-1/2-translate-y-1/2 bg-gradient-to-r from-red-600 via-purple-600 to-indigo-700">
             <div className="flex flex-col grow text-white w-[65%] max-md:mt-10 max-md:max-w-full">
-              <h2 className="text-2xl font-bold max-md:max-w-full">
+              <h2 className="text-2xl text-start font-bold max-md:max-w-full">
                 Start Building your Business Today
               </h2>
               <div className="flex gap-5 justify-between pr-8 mt-4 text-base max-md:flex-wrap max-md:pr-5">
@@ -106,7 +106,7 @@ export default function MyFooter() {
                 ))}
               </div>
             </div>
-            <div className="flex gap-4 items-start mt-2.5 text-sm font-bold tracking-normal leading-5 w-[35%] max-md:mt-10 max-sm:flex max-sm:flex-col max-sm:my-auto">
+            <div className="flex gap-4 items-center mt-2.5 text-sm font-bold tracking-normal leading-5 w-[35%] max-md:mt-10 max-sm:flex max-sm:flex-col max-sm:my-auto">
               <button
                 className="grow justify-center px-9 py-2.5 w-full text-sm text-white rounded border border-white border-solid max-md:px-5 max-sm:px-2.5 max-sm:text-xs"
                 onClick={handleGetInTouch}
@@ -121,7 +121,7 @@ export default function MyFooter() {
               </button>
             </div>
           </div>
-          <div className="flex gap-5 mt-24 text-2xl font-bold text-white max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+          <div className="flex gap-5 mt-24 text-2xl justify-center w-full font-bold text-white max-md:flex-wrap max-md:mt-10 max-md:max-w-full md:justify-between">
             <img
               loading="lazy"
               src={logo}
@@ -156,7 +156,8 @@ export default function MyFooter() {
               ))}
             </div>
           </nav>
-          <div className="flex gap-5 mt-5 w-full text-white max-md:flex-wrap max-md:max-w-full">
+          <div className="border-t border-white w-full mt-12">
+          <div className="flex gap-5 mt-5 w-full justify-between text-white max-md:flex-wrap max-md:max-w-full">
             <ul className="flex gap-5 text-lg">
               {legalItems.map((item) => (
                 <li
@@ -168,9 +169,10 @@ export default function MyFooter() {
                 </li>
               ))}
             </ul>
-            <div className="flex-auto my-auto text-sm font-light">
+            <div className="my-auto text-sm font-light">
               © 2024 All Rights Reserved
             </div>
+          </div>
           </div>
         </div>
       </div>

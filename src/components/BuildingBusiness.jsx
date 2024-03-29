@@ -16,8 +16,7 @@ const services = [
 return (
 <Box>
             <div className="flex z-[0] relative w-full" >
-              <div className="absolute  left-1/2 p-4 rounded-lg transform -translate-x-1/2 
-              -translate-y-1/2 w-[80%] bg-gradient-to-r from-red-600 via-purple-600 to-indigo-700">
+              <div className="absolute  left-1/2 p-4 rounded-lg transform -translate-x-1/2-translate-y-1/2 w-[80%] bg-gradient-to-r from-red-600 via-purple-600 to-indigo-700">
                 <div className="block md:flex flex-col md:flex-row justify-between">
                   <div className="flex flex-col">
                     <p className="font-sans font-bold text-white text-2xl p-4 text-left">
