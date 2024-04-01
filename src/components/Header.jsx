@@ -12,29 +12,23 @@ const NavLink = ({ children }) => <div className="grow">{children}</div>;
 const NavigationBar = () => (
   <nav className="flex gap-5 justify-between pr-8">
     <Link to="about">
-      
       <NavLink>About Us</NavLink>
     </Link>
     <Link to="services">
-   
       <NavLink>Services</NavLink>
     </Link>
     <Link to="portfolio">
-   
       <NavLink>Portfolio</NavLink>
     </Link>
 
     <Link to="pricing">
-
       <NavLink>Pricing</NavLink>
     </Link>
     <Link to="contact">
-
       <NavLink>Contact Us</NavLink>
     </Link>
     <Link to="faq">
-
-    <NavLink>FAQ</NavLink>
+      <NavLink>FAQ</NavLink>
     </Link>
   </nav>
 );
@@ -128,7 +122,7 @@ const Header = () => {
               <img
                 loading="lazy"
                 src={logo}
-                alt="Company Logo"
+                alt="Hiqsense"
                 className="my-auto max-w-full aspect-[7.69] w-[153px]"
               />
             </Link>
@@ -141,7 +135,7 @@ const Header = () => {
               <img
                 loading="lazy"
                 src={SmallLogo}
-                alt="Company Logo"
+                alt="Hiqsense"
                 className="w-[50px] sm:w-[40px]  object-contain"
               />
             </Link>
@@ -149,7 +143,9 @@ const Header = () => {
         )}
       </div>
       <div className="flex gap-5 justify-between px-0.5 py-1 my-auto leading-[143%]">
-        <div className="my-auto tracking-wide">Learn more</div>
+        <div className="my-auto tracking-wide">
+          <Link to="/contact">Learn more </Link>
+        </div>{" "}
         <Link to="/pricing">
           <button className="grow justify-center px-6 py-2.5 font-bold tracking-normal whitespace-nowrap bg-btn-primary rounded max-md:px-5">
             Get started
