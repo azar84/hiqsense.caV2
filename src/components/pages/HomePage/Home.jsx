@@ -48,6 +48,7 @@ export default function Home() {
   return (
     <div>
       <Helmet>
+        <meta charSet="utf-8" />
         <title>Hiqsense: Tech Partner for Small Businesses in Canada</title>
         <meta
           name="description"
@@ -60,6 +61,7 @@ export default function Home() {
             web design, corporate branding, graphic design, SEO optimization,
              email hosting, IT support, affordable solutions, business technology partner."
         />
+        <link rel="canonical" href="https://hiqsense.ca/" />
       </Helmet>
       <HeroSection />
       <Services />

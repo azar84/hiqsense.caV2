@@ -5,29 +5,15 @@ import map from "../../../../assets/pricing/map.png";
 import email from "../../../../assets/pricing/email.png";
 import facebook from "../../../../assets/pricing/facebook.png";
 import phone from "../../../../assets/pricing/phone.png";
-import mapMarker from "../../../../assets/pricing/map-marker.png"
+import mapMarker from "../../../../assets/pricing/map-marker.png";
 import "./ContactUs.css";
-import { Helmet } from "react-helmet-async";
 
 const ContactUs = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1500 });
-      }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   return (
     <div className="pricing-contact-us">
-      
-        <Helmet>
-        <title> Contact Us - Hiqsense Smart Systems: Connect with Our Expert Team</title>
-        <meta name= "description" content="Reach out to Hiqsense Smart Systems for all your small business technology needs.
-        Our Contact Us page provides easy ways to get in touch, whether you're in Saskatoon or anywhere in Canada.
-        From inquiries about our web design, graphic design, SEO, email hosting, or IT support services to scheduling a consultation,
-        our dedicated team is ready to assist and guide you towards the perfect tech solutions for your business." />
-        <meta name="keywords" content="Contact Hiqsense, Hiqsense support, web design inquiries, graphic design services
-         contact, SEO consultation, email hosting assistance, IT support queries,
-          technology help for small businesses, Saskatoon tech agency,
-           Canadian business support, technology services contact,
-            business technology advice, connect with tech experts." />
-      </Helmet>
       <div data-aos="fade-right" className="pricing-contact-left">
         <h1
           style={{ fontSize: "3.3rem", marginBottom: "3rem" }}
@@ -92,7 +78,7 @@ const ContactUs = () => {
         </div>
       </div>
       <div data-aos="fade-left" className="pricing-contact-right">
-      <img className="pricing-map-marker " src={mapMarker} alt="mapMarker" />
+        <img className="pricing-map-marker " src={mapMarker} alt="mapMarker" />
         <img className="map " src={map} alt="map" />
       </div>
     </div>

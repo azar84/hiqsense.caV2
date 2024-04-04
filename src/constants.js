@@ -67,24 +67,32 @@ const pricing_plans = [
     id: "p1",
     title: "Web Design",
     packageName: "Startup Package",
-    price: "$100",
+    price: "$1500 CAD",
     image: "/assets/pricing/ellipse.png",
     offers: [
       {
         id: "o1",
-        text: "Domain Name - 1 Year",
+        text: "Free Domain Name - 1 Year",
       },
       {
         id: "o2",
-        text: "4-Static Pages Web Design",
+        text: "5-Static Pages Web Design",
       },
       {
         id: "o3",
-        text: "Hosting - 1 Year",
+        text: "Free Hosting - 1 Year",
       },
       {
         id: "o5",
         text: "5 Business Email Accounts",
+      },
+      {
+        id: "o6",
+        text: "CMS to Manage Contents",
+      },
+      {
+        id: "o7",
+        text: "1 Month Free Support After Launch",
       },
     ],
     features: [
@@ -92,22 +100,22 @@ const pricing_plans = [
         id: "f1",
 
         title: "Domain",
-        content: "Domain Name for 1 Year",
+        content: "Free Domain Name for 1 Year",
       },
       {
         id: "f2",
-        title: "Static Pages",
-        content: "4-Static Pages Web Design",
+        title: "SSL Certificate",
+        content: "Increase Securty with SSL",
       },
       {
         id: "f3",
         title: "Hosting",
-        content: "Provides Hosting for 1 Year",
+        content: "Free Hosting for One Year",
       },
       {
         id: "f4",
         title: "Email",
-        content: "Obtain 5 Business Email Accounts",
+        content: "Professional Business Emails",
       },
     ],
   },
@@ -115,12 +123,12 @@ const pricing_plans = [
     id: "p2",
     title: "Web Design",
     packageName: "E-Commerce Package",
-    price: "$100",
+    price: "$3000 CAD",
     image: "/assets/pricing/ellipse2.png",
     offers: [
       {
         id: "o1",
-        text: "Domain Name - 1 Year",
+        text: "Free Domain Name - 1 Year",
       },
       {
         id: "o2",
@@ -132,11 +140,16 @@ const pricing_plans = [
       },
       {
         id: "o4",
-        text: "Hosting - 1 Year",
+        text: "Free Hosting - 1 Year",
       },
       {
         id: "o5",
         text: "5 Business Email Accounts",
+      },
+
+      {
+        id: "o6",
+        text: "Custom UI Design for Shopping Experience",
       },
     ],
     features: [
@@ -144,17 +157,17 @@ const pricing_plans = [
         id: "f1",
 
         title: "Domain",
-        content: "Domain Name for 1 Year",
+        content: "Free Domain Name for 1 Year",
       },
       {
         id: "f2",
-        title: "Static Pages",
-        content: "4-Static Pages Web Design",
+        title: "SSL Certificate",
+        content: "Increase Securty with SSL",
       },
       {
         id: "f3",
-        title: "Hosting",
-        content: "Provides Hosting for 1 Year",
+        title: "Shopping Cart",
+        content: "Magento or Woocommerce",
       },
       {
         id: "f4",
@@ -171,8 +184,8 @@ const pricing_plans = [
   {
     id: "p3",
     title: "Graphic Design",
-    packageName: "Logo and Graphic Design Package",
-    price: "$100",
+    packageName: "Corporate Branding Package",
+    price: "$500 CAD",
     image: "/assets/pricing/ellipse3.png",
     offers: [
       {
@@ -190,6 +203,18 @@ const pricing_plans = [
       {
         id: "o4",
         text: "Stationary Design",
+      },
+      {
+        id: "o5",
+        text: "Extensive Brand Guidelines",
+      },
+      {
+        id: "o6",
+        text: "All Editable and Source Files",
+      },
+      {
+        id: "o7",
+        text: "3D mockups",
       },
     ],
     features: [
@@ -214,18 +239,23 @@ const pricing_plans = [
         title: "Design",
         content: "With Stationary Design",
       },
+      {
+        id: "f4",
+        title: "3d Mockups",
+        content: "Visualize Your Branding",
+      },
     ],
   },
   {
     id: "p4",
     title: "SEO",
     packageName: "Take Your Business to the Next Level with Business Plan.",
-    price: "Custom",
+    price: "$1000 CAD",
     image: "/assets/pricing/Pattern.png",
     offers: [
       {
         id: "o1",
-        text: "Page Audit",
+        text: "Site Audit",
       },
       {
         id: "o2",
@@ -324,7 +354,7 @@ const faq_questions = [
     questions: [
       {
         id: "a7",
-        title:"What type of graphic design services does Hiqsense provide?",
+        title: "What type of graphic design services does Hiqsense provide?",
         answer:
           "Hiqsense offers a wide range of graphic design services including corporate identity creation, logo design, stationery design, brochure and flyer design, infographics, and custom illustrations. Our designs are tailored to enhance your brand's visual appeal and communication.",
       },
@@ -372,7 +402,8 @@ const faq_questions = [
       },
       {
         id: "a14",
-        title: "How does Hiqsense improve our website’s ranking on search engines?",
+        title:
+          "How does Hiqsense improve our website’s ranking on search engines?",
         answer:
           "We employ a multi-faceted approach to improve your website's ranking. This includes optimizing website content with relevant keywords, enhancing website speed and user experience, building quality backlinks, and ensuring your site is easily crawlable by search engine bots. We also stay updated with the latest search engine algorithms to refine our strategies.",
       },
@@ -495,45 +526,93 @@ const legal_information = [
     content: [
       {
         id: "p1",
-        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+        text: `Last Updated: March 1, 2024
   `,
       },
       {
         id: "p2",
-        text: ` Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC`,
+        text: `Welcome to Hiqsense Smart Systems LTD ("Hiqsense," "we," "our," or "us"). These Terms and Conditions ("Terms") govern your use of our website and services. By accessing or using our website, you agree to comply with these Terms. If you do not agree with any part of these Terms, you may not use our website.`,
       },
       {
         id: "p3",
-        text: ` “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
-  `,
+        text: `1. Use of Website:`,
       },
       {
         id: "p4",
-        text: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
+        text: `- You must be of legal age in your jurisdiction to use our website. By using our website, you represent and warrant that you meet the legal age requirement.
   `,
       },
       {
         id: "p5",
-        text: `Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC  `,
+        text: `- You agree to use our website only for lawful purposes and in accordance with these Terms.`,
       },
       {
         id: "p6",
-        text: `“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
-`,
+        text: `2.Intellectual Property:`,
       },
       {
         id: "p7",
-        text: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-`,
+        text: `- The content, design, and layout of our website are owned by Hiqsense and protected by Canadian copyright and other intellectual property laws.`,
       },
       {
         id: "p8",
-        text: `Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC  `,
+        text: `You may not use, reproduce, modify, distribute, or republish any content from our website without our prior written consent.`,
       },
       {
         id: "p9",
-        text: `“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
-`,
+        text: `3. User Content`,
+      },
+      {
+        id: "p10",
+        text: `By submitting any content (e.g., comments, reviews) to our website, you grant us a non-exclusive, royalty-free, perpetual, irrevocable, and worldwide license to use, reproduce, modify, adapt, publish, translate, distribute, and display such content in any form, media, or technology.`,
+      },
+      {
+        id: "p11",
+        text: `4. Disclaimer of Warranties:`,
+      },
+      {
+        id: "p12",
+        text: `- Our website and services are provided on an "as is" and "as available" basis, without any warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.`,
+      },
+      {
+        id: "p13",
+        text: `- We do not warrant that our website will be uninterrupted, error-free, or free of viruses or other harmful components.`,
+      },
+      {
+        id: "p14",
+        text: `5. Limitation of Liability:`,
+      },
+      {
+        id: "p15",
+        text: `- In no event shall Hiqsense be liable for any indirect, consequential, incidental, special, punitive, or exemplary damages arising out of or in connection with your use of our website or services.`,
+      },
+      {
+        id: "p16",
+        text: `6. Governing Law:`,
+      },
+      {
+        id: "p17",
+        text: `- These Terms shall be governed by and construed in accordance with the laws of Saskatchewan, without regard to its conflict of law provisions.`,
+      },
+      {
+        id: "p18",
+        text: `7. Changes to Terms:`,
+      },
+      {
+        id: "p19",
+        text: `- We reserve the right to modify or update these Terms at any time. The updated Terms will be posted on our website with the "Last Updated" date. Your continued use of our website after any such changes constitutes your acceptance of the new Terms.`,
+      },
+      {
+        id: "p20",
+        text: `8. Contact Us:`,
+      },
+      {
+        id: "p21",
+        text: `If you have any questions or concerns about these Terms, please contact us at info@hiqsense.ca.`,
+      },
+      {
+        id: "p22",
+        text: `By using our website, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these Terms, you may not use our website.`,
       },
     ],
   },
@@ -544,48 +623,103 @@ const legal_information = [
     content: [
       {
         id: "p1",
-        text: `Privacy Policy sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-  `,
+        text: `Effective Date: March 1, 2024`,
       },
       {
         id: "p2",
-        text: ` Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC`,
+        text: ` Hiqsense Smart Systems LTD ("Hiqsense," "we," "our," or "us") is committed to protecting the privacy of our users. This Privacy Policy outlines how we collect, use, disclose, and protect personal information obtained through our website and services.`,
       },
       {
         id: "p3",
-        text: ` “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
-  `,
+        text: `1. Information We Collect:`,
       },
       {
         id: "p4",
-        text: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-  `,
+        text: `- Personal Information: We may collect personal information such as name, email address, phone number, and other contact details when voluntarily provided by users.  `,
       },
       {
         id: "p5",
-        text: `Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC  `,
+        text: `- Usage Information: We may collect non-personal information about users' interactions with our website and services, such as IP address, browser type, device information, and browsing behavior.`,
       },
       {
         id: "p6",
-        text: `“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
+        text: `- Cookies: We may use cookies and similar technologies to enhance user experience, analyze trends, and personalize content. Users can manage cookie preferences through their browser settings.
 `,
       },
       {
         id: "p7",
-        text: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-`,
+        text: `2. How We Use Information:`,
       },
       {
         id: "p8",
-        text: `Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC  `,
+        text: `- Personalization: We use collected information to personalize user experience, tailor content, and provide relevant recommendations.`,
       },
       {
         id: "p9",
-        text: `“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non.
-`,
+        text: `- Communication: We may use contact information to respond to inquiries, send updates, promotions, and other communications.`,
+      },
+      {
+        id: "p10",
+        text: `- Analytics: We use usage information for analytics purposes, such as measuring website performance, analyzing trends, and improving our services.`,
+      },
+      {
+        id: "p11",
+        text: `3. Information Sharing:`,
+      },
+      {
+        id: "p12",
+        text: `- Third-Party Service Providers: We may share information with trusted third-party service providers to facilitate website operation, data analysis, and other business functions.`,
+      },
+      {
+        id: "p13",
+        text: `4. Data Security:`,
+      },
+      {
+        id: "p14",
+        text: `- We implement security measures to protect personal information from unauthorized access, disclosure, alteration, or destruction.`,
+      },
+      {
+        id: "p15",
+        text: `- However, no method of transmission over the internet or electronic storage is 100% secure. Therefore, we cannot guarantee absolute security of user information.`,
+      },
+      {
+        id: "p16",
+        text: `5. User Choices:`,
+      },
+      {
+        id: "p17",
+        text: `- Users may choose to provide or withhold certain information, but this may affect their ability to access certain features or services.`,
+      },
+      {
+        id: "p19",
+        text: `6. Children's Privacy:`,
+      },
+      {
+        id: "p20",
+        text: `- Our website and services are not intended for children under 13 years of age. We do not knowingly collect personal information from children.`,
+      },
+      {
+        id: "p21",
+        text: `7. Updates to Privacy Policy:`,
+      },
+      {
+        id: "p22",
+        text: `- We may update this Privacy Policy periodically. Users will be notified of any material changes via email or by prominently posting a notice on our website.`,
+      },
+      {
+        id: "p23",
+        text: `8. Contact Us:`,
+      },
+      {
+        id: "p24",
+        text: `- For questions or concerns regarding this Privacy Policy or our data practices, users may contact us at info@hiqsense.ca.`,
+      },
+      {
+        id: "p25",
+        text: `By using our website and services, users consent to the collection, use, and disclosure of information as described in this Privacy Policy.`,
       },
     ],
-  }
+  },
 ];
 
 export { features, services, pricing_plans, faq_questions, legal_information };

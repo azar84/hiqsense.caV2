@@ -35,6 +35,7 @@ export default function Portfolio() {
   return (
     <>
       <Helmet>
+        <meta charSet="utf-8" />
         <title>
           Portfolio - Hiqsense Smart Systems: Showcasing Our Impact on Small
           Businesses
@@ -52,6 +53,7 @@ export default function Portfolio() {
                      SEO case studies, business transformation, Canadian small businesses, technology impact, portfolio showcase,
                       innovative solutions, client success stories, industry variety, Saskatoon web agency, technology excellence."
         />
+        <link rel="canonical" href="https://hiqsense.ca/portfolio" />
       </Helmet>
       <section className="flex flex-col pt-[250px] mid:flex-row justify-between items-center p-8 bg-custom-background bg-[#372B92] pb-0 mid:pt-0">
         <div className="flex flex-col gap-2">

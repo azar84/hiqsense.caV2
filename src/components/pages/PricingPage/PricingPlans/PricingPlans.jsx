@@ -55,11 +55,11 @@ const PricingPlans = () => {
             }}
             className="font-normal font-subTitle my-12 "
           >
-            {" "}
-            Launching your online presence has never been more accessible. Our
-            Web Design Start-Up Plan at $100 is curated for entrepreneurs and
-            small businesses ready to make a digital impact. This comprehensive
-            package includes:
+            Unlock your online potential with our $1500 CAD package, featuring a
+            stunning five-page professional website, easy CMS, free domain and
+            hosting for a year, premium design, five business emails, and a
+            month of post-launch support. Elevate your brand effortlessly and
+            impressively!
           </p>
         </div>
         <div className="pricing-plan-features">
@@ -96,26 +96,27 @@ const PricingPlans = () => {
             }}
             className="font-normal font-subTitle my-12"
           >
-            {" "}
-            Launching your online presence has never been more accessible. Our
-            Web Design Start-Up Plan at $100 is curated for entrepreneurs and
-            small businesses ready to make a digital impact. This comprehensive
-            package includes:
+            Experience the pinnacle of online retail with our $3000 CAD package:
+            A year of free domain and SSL-secured hosting, a seamless shopping
+            cart with secure payments, responsive design for all devices, custom
+            UI for an unparalleled shopping experience, unlimited products &
+            categories, plus 24/7 support for the first month. Elevate your
+            e-commerce effortlessly!
           </p>
         </div>
         <div className="pricing-plan-features">
           {pricing_plans[1].features.map((feature, index) => (
             <div
-            key={feature.id}
-            data-aos="fade-up"
-            data-aos-delay={`${(index + 1) * 300}`}
-          >
-            <PricingItem
-              styles="left-right-spacing"
               key={feature.id}
-              title={feature.title}
-              content={feature.content}
-            />
+              data-aos="fade-up"
+              data-aos-delay={`${(index + 1) * 300}`}
+            >
+              <PricingItem
+                styles="left-right-spacing"
+                key={feature.id}
+                title={feature.title}
+                content={feature.content}
+              />
             </div>
           ))}
         </div>
@@ -144,26 +145,27 @@ const PricingPlans = () => {
             }}
             className="font-normal font-subTitle my-12"
           >
-            {" "}
-            Launching your online presence has never been more accessible. Our
-            Web Design Start-Up Plan at $100 is curated for entrepreneurs and
-            small businesses ready to make a digital impact. This comprehensive
-            package includes:
+            Revitalize your brand with our $500 CAD package, offering three
+            unique creative concepts, a comprehensive social media kit, stylish
+            stationery and mockups, in-depth brand guidelines, a curated color
+            palette and typography, an elegant brand book, 3D mockups, plus all
+            editable and source files for total control. Transform and define
+            your brand identity with sophistication and ease!
           </p>
         </div>
         <div className="pricing-plan-features">
-          {pricing_plans[0].features.map((feature, index) => (
+          {pricing_plans[2].features.map((feature, index) => (
             <div
-            key={feature.id}
-            data-aos="fade-up"
-            data-aos-delay={`${(index + 1) * 300}`}
-          >
-            <PricingItem
-              styles="left-right-spacing"
               key={feature.id}
-              title={feature.title}
-              content={feature.content}
-            />
+              data-aos="fade-up"
+              data-aos-delay={`${(index + 1) * 300}`}
+            >
+              <PricingItem
+                styles="left-right-spacing"
+                key={feature.id}
+                title={feature.title}
+                content={feature.content}
+              />
             </div>
           ))}
         </div>
@@ -192,26 +194,27 @@ const PricingPlans = () => {
             }}
             className="font-normal font-subTitle my-12"
           >
-            {" "}
-            Launching your online presence has never been more accessible. Our
-            Web Design Start-Up Plan at $100 is curated for entrepreneurs and
-            small businesses ready to make a digital impact. This comprehensive
-            package includes:
+            Elevate your online visibility with our $1000 CAD SEO package,
+            offering a detailed site audit, comprehensive keyword research,
+            optimized H1, H2, H3 tags, on-page enhancement, crafted meta
+            descriptions, schema markup, sitemap submission to search engines,
+            and expert content rewriting. Boost your search rankings and drive
+            traffic effortlessly!
           </p>
         </div>
         <div className="pricing-plan-features">
-          {pricing_plans[1].features.map((feature, index) => (
+          {pricing_plans[3].features.map((feature, index) => (
             <div
-            key={feature.id}
-            data-aos="fade-up"
-            data-aos-delay={`${(index + 1) * 300}`}
-          >
-            <PricingItem
-              styles="left-right-spacing"
               key={feature.id}
-              title={feature.title}
-              content={feature.content}
-            />
+              data-aos="fade-up"
+              data-aos-delay={`${(index + 1) * 300}`}
+            >
+              <PricingItem
+                styles="left-right-spacing"
+                key={feature.id}
+                title={feature.title}
+                content={feature.content}
+              />
             </div>
           ))}
         </div>

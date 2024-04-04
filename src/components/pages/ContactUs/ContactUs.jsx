@@ -8,6 +8,7 @@ import { ContactForm } from "./components/FormNew";
 import Map from "./components/Map";
 
 import { Container } from "./components/Container";
+import { Helmet } from "react-helmet-async";
 
 const cardVariants = {
   offscreen: {
@@ -26,14 +27,29 @@ const cardVariants = {
 const ContactUs = () => {
   return (
     <main className="pt-14 bg-[#F9F9F9] flex-1 min-h-[100dvh] w-full flex flex-col">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact Us: Get Started Today</title>
+        <meta
+          name="description"
+          content="Reach out to Hiqsense in Saskatoon, SK for expert web design solutions for your small business. Contact us today"
+        />
+        <meta
+          name="keywords"
+          content="Hiqsense, Hiqsense Smart Systems, web design agency, 
+           Saskatoon, Saskatchewan, small business, Canada, professional services,
+            web design, corporate branding, graphic design, SEO optimization,
+             email hosting, IT support, affordable solutions, business technology partner."
+        />
+        <link rel="canonical" href="https://hiqsense.ca/contact" />
+      </Helmet>
       <Banner />
-      <Container >
+      <Container>
         <Link to="/booking">
           <div
             className={`border border-btn-primary 
             text-[#F6393D] font-hebrew-bold tracking-[0.1px] px-6 py-2.5
              rounded text-sm mx-2 lg:inline-block lg:px-20 my-12`}
-            data-aos="fade-up"
             data-aos-duration="1500"
           >
             Book Free Consultation

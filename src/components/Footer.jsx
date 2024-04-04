@@ -94,7 +94,7 @@ export default function MyFooter() {
   return (
     <footer className="flex flex-col md:relative">
       <div className="flex flex-col items-center px-16 pb-6  w-full bg-violet-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
-         <div className="flex z-10 flex-col items-center items-center mt-0 w-full max-w-[1200px] max-md:max-w-full ">
+        <div className="flex z-10 flex-col items-center items-center mt-0 w-full max-w-[1200px] max-md:max-w-full ">
           <div className="block md:absolute top-[-66px] w-[80%] flex flex-row px-5 py-6 rounded-xl max-md:px-5 max-md:max-w-full rounded-lg transform -translate-x-1/2-translate-y-1/2 bg-gradient-to-r from-red-600 via-purple-600 to-indigo-700">
             <div className="flex flex-col grow text-white w-[65%] max-md:mt-10 max-md:max-w-full">
               <h2 className="text-2xl text-start font-bold max-md:max-w-full">
@@ -157,22 +157,22 @@ export default function MyFooter() {
             </div>
           </nav>
           <div className="border-t border-white w-full mt-12">
-          <div className="flex gap-5 mt-5 w-full justify-between text-white max-md:flex-wrap max-md:max-w-full">
-            <ul className="flex gap-5 text-lg">
-              {legalItems.map((item) => (
-                <li
-                  key={item.text}
-                  className="flex-auto max-sm:text-xs cursor-pointer"
-                  onClick={() => handleLegalItemClick(item.link)}
-                >
-                  {item.text}
-                </li>
-              ))}
-            </ul>
-            <div className="my-auto text-sm font-light">
-              © 2024 All Rights Reserved
+            <div className="flex gap-5 mt-5 w-full justify-between text-white max-md:flex-wrap max-md:max-w-full">
+              <ul className="flex gap-5 text-lg">
+                {legalItems.map((item) => (
+                  <li
+                    key={item.text}
+                    className="flex-auto max-sm:text-xs cursor-pointer"
+                    onClick={() => handleLegalItemClick(item.link)}
+                  >
+                    {item.text}
+                  </li>
+                ))}
+              </ul>
+              <div className="my-auto text-sm font-light">
+                © 2024 All Rights Reserved for Hiqsense Smart Systems LTD
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
