@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import icon from "../../../../assets/pricing/Icon.png";
 import check from "../../../../assets/pricing/Check.png";
 import "./PricingCard.css";
+import { HashLink as Link} from "react-router-hash-link";
 
 const PricingCard = ({
   title,
@@ -58,7 +59,9 @@ const PricingCard = ({
             </div>
           </div>
           <div className="plan-card-btn-container">
+            <Link to = "/contact#root"> 
             <button className="plan-card-btn font-subTitle">Get Started</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { HashLink as Link} from "react-router-hash-link";
 // eslint-disable-next-line no-undef
 const imagePath = `${process.env.REACT_APP_PUBLIC_URL}/assets/images/service_img/teamview/teamview.png`;
 
@@ -34,9 +35,11 @@ const TeamView = () => {
             <p className="font-opensanshebrew text-center md:text-custom-regular sm:text-[14px] text-[12px] sm:text-left">
               Our Pinnacle Pioneers bring a wealth of knowledge, creativity, and innovation to the table, ensuring that every project is not just a success but a groundbreaking testament to digital excellence
             </p>
+            <Link to = "/about"> 
             <button className="grow justify-center px-6 mt-1 py-2.5 font-bold tracking-normal whitespace-nowrap bg-red-500 rounded max-md:px-5 md:w-[165px]">
               View Our Team
             </button>
+            </Link>
           </div>
           <div className={`transition-transform duration-500 ${isVisible ? 'animate-slideLeft' : 'translate-x-full'}`}>
             <img alt="service hero image" src={imagePath} />

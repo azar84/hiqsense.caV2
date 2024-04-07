@@ -16,7 +16,7 @@ import Team from "../Team/Team";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet-async";
-
+import { HashLink as Link } from "react-router-hash-link";
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -74,8 +74,7 @@ const AboutUs = () => {
               }}
               className="about-hero-text text-center md:text-left text-whiteTitle font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design
-              Odyssey
+              Empowering Canadian Businesses: Hiqsense, Your Technology Ally
             </p>
           </div>
           <img
@@ -101,8 +100,8 @@ const AboutUs = () => {
               style={{ fontSize: "2rem" }}
               className=" transform-text sm:text-3xl  font-bold text-left font-subTitle"
             >
-              Transforming Urban Landscapes: Saskatoon&apos;s 10-Year Design
-              Odyssey
+              From Saskatoon to the World: Elevate Your Online Presence with
+              Hiqsense
             </p>
             <p
               style={{
@@ -115,12 +114,14 @@ const AboutUs = () => {
               }}
               className=" md:text-left font-subTitle text-transform"
             >
-              Welcome to a decade of design excellence where innovation meets
-              urban evolution. At [Your Company Name], we take pride in our
-              commitment to shaping Saskatoon&apos;s landscape through
-              cutting-edge design solutions. Our journey has been marked by a
-              relentless pursuit of excellence, leaving an indelible mark on the
-              city&apos;s digital transformation.
+              At Hiqsense, we&apos;re on a mission to empower small businesses
+              across Canada by providing affordable solutions for establishing a
+              professional online presence. From captivating logo design to
+              comprehensive SEO optimization and seamless email hosting setup,
+              we offer a full suite of services to meet all your digital needs.
+              With our expertise and dedication, we&apos;ll help you stand out
+              in the crowded online marketplace and achieve your business goals.
+              Let Hiqsense be your trusted partner on the path to success.
             </p>
             <p
               style={{
@@ -152,15 +153,16 @@ const AboutUs = () => {
             }}
             className="font-bold font-subTitle text-center md:text-left transform-text"
           >
-            {" "}
             We are Dedicated to Pushing the Boundaries of Design and Automation
           </p>
           <div className="btn-services-container">
-            <AboutButton
-              someStyle="add-width"
-              className="services-btn"
-              text="Get started"
-            />
+            <Link to="/contact#root">
+              <AboutButton
+                someStyle="add-width"
+                className="services-btn"
+                text="Get started"
+              />
+            </Link>
           </div>
         </div>
         <div className="about-services-right">
@@ -206,7 +208,7 @@ const AboutUs = () => {
           style={{ fontSize: "3.5rem", color: "#F9F9F9" }}
           className="font-body font-bold"
         >
-          Meet the Team{" "}
+          Meet the Team
         </p>
         <Team />
       </div>
@@ -215,7 +217,6 @@ const AboutUs = () => {
         <img className="circular-bg" src={circularBg} alt="circularBg" />
 
         <div style={{ width: "65%" }} className="values-text-container">
-          {" "}
           <p
             style={{ fontSize: "3.5rem", marginTop: "5rem" }}
             className="font-body font-bold text-6xl"
@@ -226,7 +227,6 @@ const AboutUs = () => {
             style={{ fontSize: "1.125rem", marginTop: "1rem" }}
             className="font-normal font-subTitle"
           >
-            {" "}
             Our approach combines cutting-edge technology with personalized
             strategies to deliver exceptional results.
           </p>
@@ -248,7 +248,7 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
-        <AboutButton text="Get started" />
+        <Link to = "/contact#root"><AboutButton text="Get started" /></Link>
       </div>
     </div>
   );

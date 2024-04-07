@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import saly from "../../images/Saly.png";
 import linear from "../../images/linear.png";
 import "./style.css";
+import { HashLink as Link} from "react-router-hash-link";
 
 export default function ContactUs() {
   const [isVisible, setIsVisible] = useState(false);
@@ -49,13 +50,15 @@ export default function ContactUs() {
           >
             Contact us and let’s get down to business!
           </p>
+          
           <button
             className={`z-[50] bg-[#F6393D] w-1/4 px-2 py-2 rounded-lg small:ml-0 mid:ml-[100px] ${
               isVisible ? "slide-in-left" : ""
             }`}
-          >
-            <p className="text-[#F9F9F9]">Get started</p>
+          ><Link to= "/contact#root"> 
+            <p className="text-[#F9F9F9]">Get started</p></Link>
           </button>
+          
           <img
             src={linear}
             className={`absolute top-4 w-2/3 ${

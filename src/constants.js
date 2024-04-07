@@ -11,8 +11,8 @@ const TEAM_MEMBERS = [
   },
   {
     id: "m3",
-    image: "/assets/about-us/mike.png",
-    description: "/assets/about-us/mike_description.png",
+    image: "/assets/about-us/alexy.png",
+    description: "/assets/about-us/alexy_description.png",
   },
   {
     id: "m4",

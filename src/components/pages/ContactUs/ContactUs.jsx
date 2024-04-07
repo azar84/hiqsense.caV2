@@ -87,11 +87,11 @@ const ContactUs = () => {
         >
           <div className="w-full max-w-[755px] flex flex-col items-center gap-10 pt-4 pb-32 px-2 sm:px-6 text-white">
             <h1 className="text-3xl sm:text-4xl md:text-5xl text-left font-bold ">
-              {" "}
-              Do You Have a Question?{" "}
+              
+              Do You Have a Question?
             </h1>
             <p className="text-base font-medium">
-              {" "}
+          
               You may go to our
               <span className="text-[#F6393D] font-bold px-1">FAQ</span>
               page and look for the answers to your inquiries or you may send us

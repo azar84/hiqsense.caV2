@@ -47,18 +47,7 @@ const Team = () => {
         />
       </div>
 
-      <div className="about-team-member about-team-member-reverse ">
-        <img data-aos="fade-up" className="w-[500px] " src={members[3].image} alt="/" />
 
-        <img data-aos="fade-up"
-          className="w-[500px] "
-          style={{
-            paddingTop: "9.5rem",
-          }}
-          src={members[3].description}
-          alt="/"
-        />
-      </div>
     </div>
   );
 };

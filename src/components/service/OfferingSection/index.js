@@ -1,5 +1,6 @@
 import OfferingCard from "../OfferingCard";
 import dataObj from "../../../utils/constant.json";
+import { HashLink as Link } from "react-router-hash-link";
 
 const OfferingSection = () => {
   const { data } = dataObj;
@@ -29,12 +30,15 @@ const OfferingSection = () => {
           );
         })}
       </div>
+    
+      <Link to = "/contact#root">
       <button
         className="grow justify-center px-6 py-2.5 font-bold tracking-normal whitespace-nowrap bg-red-500 rounded max-md:px-5 text-white w-[150px] mb-[100px] 
       h-[48px]"
       >
         Get started
       </button>
+      </Link>
     </div>
   );
 };

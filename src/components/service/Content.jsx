@@ -1,3 +1,4 @@
+import { HashLink as Link } from "react-router-hash-link";
 import CompanyLogos from "./CompanyLogos";
 
 const Content = () => {
@@ -9,7 +10,9 @@ const Content = () => {
           <p className="text-white font-opensanshebrew text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] xl:text-[21px]">
             Join us on a journey where your digital presence is not just enhanced but elevated, shaping the urban landscape in ways that are both visually stunning and strategically impactful.
           </p>
+          <Link to = "/contact#root">
           <button className="text-white bg-red-500 py-2.5 w-full lg:w-fit rounded px-6 font-bold">Get started</button>
+          </Link>
         </div>
       </div>
       <hr className="h-px mt-8 bg-content-underline border-0 lg:mx-[120px] md:mx-[90px] sm:mx-[60px] mx-[30px]" />
