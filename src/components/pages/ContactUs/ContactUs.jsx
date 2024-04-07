@@ -8,7 +8,7 @@ import { ContactForm } from "./components/FormNew";
 import Map from "./components/Map";
 
 import { Container } from "./components/Container";
-import { Helmet } from "react-helmet-async";
+import SEO from "../../SEO";
 
 const cardVariants = {
   offscreen: {
@@ -27,22 +27,14 @@ const cardVariants = {
 const ContactUs = () => {
   return (
     <main className="pt-14 bg-[#F9F9F9] flex-1 min-h-[100dvh] w-full flex flex-col">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Contact Us: Get Started Today</title>
-        <meta
-          name="description"
-          content="Reach out to Hiqsense in Saskatoon, SK for expert web design solutions for your small business. Contact us today"
-        />
-        <meta
-          name="keywords"
-          content="Hiqsense, Hiqsense Smart Systems, web design agency, 
-           Saskatoon, Saskatchewan, small business, Canada, professional services,
-            web design, corporate branding, graphic design, SEO optimization,
-             email hosting, IT support, affordable solutions, business technology partner."
-        />
-        <link rel="canonical" href="https://hiqsense.ca/contact" />
-      </Helmet>
+      <SEO
+        title="Hiqsense | Contact Us | Get Started Today"
+        description="Reach out to Hiqsense in Saskatoon, SK for expert web design solutions for your small business. Contact us today"
+        canonical="https://hiqsense.ca/contact"
+        name="Hiqsense Smart Systems LTD"
+        type="article"
+      />
+
       <Banner />
       <Container>
         <Link to="/booking">
@@ -87,11 +79,9 @@ const ContactUs = () => {
         >
           <div className="w-full max-w-[755px] flex flex-col items-center gap-10 pt-4 pb-32 px-2 sm:px-6 text-white">
             <h1 className="text-3xl sm:text-4xl md:text-5xl text-left font-bold ">
-              
               Do You Have a Question?
             </h1>
             <p className="text-base font-medium">
-          
               You may go to our
               <span className="text-[#F6393D] font-bold px-1">FAQ</span>
               page and look for the answers to your inquiries or you may send us

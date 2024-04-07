@@ -15,7 +15,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
-import { Helmet } from "react-helmet-async";
+import SEO from "../../../components/SEO";
 
 // import AOS from "../../../../node_modules/aos/dist/aos";
 // import "aos/dist/aos.css";
@@ -47,22 +47,15 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Hiqsense: Tech Partner for Small Businesses in Canada</title>
-        <meta
-          name="description"
-          content="Discover Hiqsense: premier web design agency in Saskatoon, SK, serving small businesses across Canada. Elevate your business with our tailored solutions."
-        />
-        <meta
-          name="keywords"
-          content="Hiqsense, Hiqsense Smart Systems, web design agency, 
-           Saskatoon, Saskatchewan, small business, Canada, professional services,
-            web design, corporate branding, graphic design, SEO optimization,
-             email hosting, IT support, affordable solutions, business technology partner."
-        />
-        <link rel="canonical" href="https://hiqsense.ca/" />
-      </Helmet>
+      <SEO
+        title="Hiqsense | Home | Tech Partner for Small Businesses in Canada"
+        description="Discover Hiqsense: premier web design agency in Saskatoon,
+         SK, serving small businesses across Canada. Elevate your business with our tailored solutions."
+        canonical="https://hiqsense.ca"
+        name="Hiqsense Smart Systems LTD"
+        type="article"
+      />
+
       <HeroSection />
       <Services />
       <WhyChooseUs />

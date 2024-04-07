@@ -15,8 +15,8 @@ import ServiceCard from "../ServiceCard";
 import Team from "../Team/Team";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Helmet } from "react-helmet-async";
 import { HashLink as Link } from "react-router-hash-link";
+import SEO from "../../components/SEO";
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -24,26 +24,18 @@ const AboutUs = () => {
 
   return (
     <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>About Us - Hiqsense Your Canadian Small Business Ally</title>
-        <meta
-          name="description"
-          content="Meet the team behind Hiqsense Smart Systems, Saskatoon's leading web design and technology agency
-         dedicated to empowering small businesses across Canada. Learn about our journey,
-          values, and commitment to providing top-notch web design, branding, graphic design, SEO,
-           email hosting, and IT support. Discover how our affordable, tailored solutions make technology
-            accessible and effective for small businesses."
-        />
-        <meta
-          name="keywords"
-          content="About Hiqsense, Hiqsense team, web design Saskatoon, small business technology,
-            Canadian web agency, technology services, affordable web solutions, business IT support, Hiqsense values,
-             empowering small businesses, technology journey, graphic design, SEO services, email hosting solutions,
-              IT solutions."
-        />
-        <link rel="canonical" href="https://hiqsense.ca/about" />
-      </Helmet>
+      <SEO
+        title="Hiqsense | About Us | Your Canadian Small Business Ally"
+        description="Meet the team behind Hiqsense Smart Systems, Saskatoon's leading web design and technology agency
+        dedicated to empowering small businesses across Canada. Learn about our journey,
+         values, and commitment to providing top-notch web design, branding, graphic design, SEO,
+          email hosting, and IT support. Discover how our affordable, tailored solutions make technology
+           accessible and effective for small businesses."
+        canonical="https://hiqsense.ca/about"
+        name="Hiqsense Smart Systems LTD"
+        type="article"
+      />
+
       <div className="about-hero-section w-full  ">
         <div
           style={{ paddingBottom: "5rem" }}
@@ -248,7 +240,9 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
-        <Link to = "/contact#root"><AboutButton text="Get started" /></Link>
+        <Link to="/contact#root">
+          <AboutButton text="Get started" />
+        </Link>
       </div>
     </div>
   );

@@ -4,8 +4,7 @@ import FeaturedWork from "./FeaturedWork";
 import "./style.css";
 import ClientTestimonials from "./ClientTestimonials";
 import ContactUs from "./ContactUs";
-import { Helmet } from "react-helmet-async";
-
+import SEO from "../../SEO";
 export default function Portfolio() {
   const [isVisible, setIsVisible] = useState(false);
   const imageRef = useRef(null);
@@ -34,27 +33,17 @@ export default function Portfolio() {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>
-          Portfolio - Hiqsense Smart Systems: Showcasing Our Impact on Small
-          Businesses
-        </title>
-        <meta
-          name="description"
-          content="Delve into the diverse portfolio of Hiqsense Smart Systems and witness 
-                    the transformative impact we've had on small businesses across Canada. Our portfolio highlights our expertise in web design,
-                     graphic design, SEO optimization, and more, showcasing real-world examples of our successful partnerships.
-                      See how our innovative solutions have empowered businesses in various industries to reach their full potential"
-        />
-        <meta
-          name="keywords"
-          content="Hiqsense portfolio, successful projects, web design showcase, graphic design examples,
-                     SEO case studies, business transformation, Canadian small businesses, technology impact, portfolio showcase,
-                      innovative solutions, client success stories, industry variety, Saskatoon web agency, technology excellence."
-        />
-        <link rel="canonical" href="https://hiqsense.ca/portfolio" />
-      </Helmet>
+      <SEO
+        title="Hiqsense | Portfolio | Showcasing Our Impact on Small
+        Businesses"
+        description="Delve into the diverse portfolio of Hiqsense Smart Systems and witness 
+        the transformative impact we've had on small businesses across Canada. Our portfolio highlights our expertise in web design,
+         graphic design, SEO optimization, and more, showcasing real-world examples of our successful partnerships.
+          See how our innovative solutions have empowered businesses in various industries to reach their full potential"
+        canonical="https://hiqsense.ca/porfolio"
+        name="Hiqsense Smart Systems LTD"
+        type="article"
+      />
       <section className="flex flex-col pt-[250px] mid:flex-row justify-between items-center p-8 bg-custom-background bg-[#372B92] pb-0 mid:pt-0">
         <div className="flex flex-col gap-2">
           <h1
