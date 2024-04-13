@@ -4,12 +4,16 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import SplideCore from "@splidejs/splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import gogleImg from "../../../images/awards/google.png";
+//import gogleImg from "../../../images/awards/google.png";
 import microsoftImg from "../../../images/awards/microsoft.png";
-import amazonImg from "../../../images/awards/amazon.png";
-import ciscoImg from "../../../images/awards/cisco.png";
+import amazonImg from "../../../images/awards/AWS.png";
+//import ciscoImg from "../../../images/awards/cisco.png";
 import metaImg from "../../../images/awards/meta.png";
-import ibmImg from "../../../images/awards/ibm.png";
+//import ibmImg from "../../../images/awards/ibm.png";
+import DesignRush from "../../../images/awards/DesignRush.png";
+import Firebase from "../../../images/awards/Firebase.png";
+import Zoho from "../../../images/awards/zoho-logo-web.svg";
+
 import { useEffect } from "react";
 // import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
@@ -63,8 +67,8 @@ function Awards() {
   return (
     <>
       <section className="px-4 lg:px-40 pt-10 lg:pt-20">
-        <PrimaryHeading headingText="Recognition and Awards" />
-        <PrimarySubHeading subText="Recognized by top industry leaders for exceptional work" />
+        <PrimaryHeading headingText="Partners & Technologies" />
+        <PrimarySubHeading subText="Enhanced Service Through Technology Partnerships" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 awardsBottomLine">
           <div>
@@ -73,7 +77,7 @@ function Awards() {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              We’ve More Then 254+ Global Partners
+              Powering Excellence with Technology Partnerships
             </h3>
           </div>
           <div>
@@ -82,31 +86,45 @@ function Awards() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              We’ve partnered and recognized by 20+ companies. We aim to
-              continue serving businesses and offering them the best possible
-              solution.
+              We&apos;ve partnered with top technology providers to deliver
+              exceptional service to our clients, leveraging innovative
+              solutions to meet their needs.
             </p>
           </div>
         </div>
         <div className="mt-10 lg:mt-20">
           <Splide aria-label="Partners Images" className="awardsSplide">
-            <SplideSlide>
-              <img src={gogleImg} alt="Image 1" />
+            <SplideSlide className="p-6">
+              <img
+                src={DesignRush}
+                alt="Hiqsense Smart Systems LTD on DesignRush"
+              />
             </SplideSlide>
-            <SplideSlide>
-              <img src={microsoftImg} alt="Image 2" />
+            <SplideSlide className="p-6">
+              <img
+                src={Firebase}
+                alt="Hiqsense Smart Systems LTD on FireBase"
+              />
             </SplideSlide>
-            <SplideSlide>
-              <img src={amazonImg} alt="Image 1" />
+
+            <SplideSlide className="p-6">
+              <img src={Zoho} alt="Hiqsense Smart Systems LTD on Zoho" />
             </SplideSlide>
-            <SplideSlide>
-              <img src={ciscoImg} alt="Image 2" />
+            <SplideSlide className="p-6">
+              <img
+                src={microsoftImg}
+                alt="Hiqsense Smart Systems LTD on Microsoft"
+              />
             </SplideSlide>
-            <SplideSlide>
-              <img src={metaImg} alt="Image 1" />
+            <SplideSlide className="p-6">
+              <img
+                src={amazonImg}
+                alt="Hiqsense Smart Systems LTD on Amazon Web Services"
+              />
             </SplideSlide>
-            <SplideSlide>
-              <img src={ibmImg} alt="Image 2" />
+
+            <SplideSlide className="p-6">
+              <img src={metaImg} alt="Hiqsense Smart Systems LTD on Facebook" />
             </SplideSlide>
           </Splide>
         </div>

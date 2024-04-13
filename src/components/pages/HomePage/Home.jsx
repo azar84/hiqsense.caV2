@@ -6,7 +6,7 @@ import FeaturedWork from "../HomePage/FeaturedWork/FeaturedWork";
 import Consultation from "./Consultation/Consultation";
 //import ClientTestimonials from "../Portfolio/ClientTestimonials";
 import TimelineSection from "../HomePage/TimelineSection/TimelineSection";
-//import Awards from "../HomePage/Awards/Awards";
+import Awards from "../HomePage/Awards/Awards";
 import PricingOptions from "../HomePage/PricingOptions/PricingOptions";
 //import Cta from "../HomePage/CTA/Cta";
 import GetInTouch from "../GetInTouch/GetInTouch";
@@ -71,7 +71,7 @@ export default function Home() {
       {/* <ClientTestimonials /> */}
 
       <TimelineSection />
-      {/* <Awards /> */}
+      <Awards />
       <PricingOptions />
       {/* <Cta /> */}
       <GetInTouch />
