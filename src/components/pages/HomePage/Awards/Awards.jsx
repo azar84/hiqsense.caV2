@@ -13,7 +13,7 @@ import metaImg from "../../../images/awards/meta.png";
 import DesignRush from "../../../images/awards/DesignRush.png";
 import Firebase from "../../../images/awards/Firebase.png";
 import Zoho from "../../../images/awards/zoho-logo-web.svg";
-
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 // import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
@@ -92,14 +92,18 @@ function Awards() {
             </p>
           </div>
         </div>
+
         <div className="mt-10 lg:mt-20">
           <Splide aria-label="Partners Images" className="awardsSplide">
             <SplideSlide className="p-6">
-              <img
-                src={DesignRush}
-                alt="Hiqsense Smart Systems LTD on DesignRush"
-              />
+              <Link to="https://www.designrush.com/" target="_blnak">
+                <img
+                  src={DesignRush}
+                  alt="Hiqsense Smart Systems LTD on DesignRush"
+                />
+              </Link>
             </SplideSlide>
+
             <SplideSlide className="p-6">
               <img
                 src={Firebase}
