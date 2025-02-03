@@ -22,8 +22,8 @@ export const ContactForm = () => {
           src="https://forms.zohopublic.ca/hiqsense/form/hiqsensecacontact/formperma/yYWROdo-WyMJMy7LDqeK4TuLBKv_gWhoojEwW2yVk18"
         ></iframe>
         <div className="flex flex-wrap items-start justify-around gap-2 ">
-          <Link to="tel:3062618582">
-            <ContactInfo icon={phoneIcon} text="+1 306 912 9997" />
+          <Link to="tel:3069124726">
+            <ContactInfo icon={phoneIcon} text="+1 306 912 4726" />
           </Link>
           <Link to="https://www.facebook.com/hiqsense">
             <ContactInfo
