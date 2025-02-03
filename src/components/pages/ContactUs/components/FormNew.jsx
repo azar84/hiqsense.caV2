@@ -23,7 +23,7 @@ export const ContactForm = () => {
         ></iframe>
         <div className="flex flex-wrap items-start justify-around gap-2 ">
           <Link to="tel:3069124726">
-            <ContactInfo icon={phoneIcon} text="+1 306 912 8582" />
+            <ContactInfo icon={phoneIcon} text="+1 306 912 4726" />
           </Link>
           <Link to="https://www.facebook.com/hiqsense">
             <ContactInfo
