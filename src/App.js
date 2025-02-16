@@ -16,6 +16,7 @@ import AboutUs from "./components/pages/AboutUs";
 import ContactUs from "./components/pages/ContactUs/ContactUs";
 import Pricing from "./components/pages/PricingPage/Pricing";
 
+
 // Sections Import Start
 import theme from "./Theme";
 import Service from "./components/Service";
@@ -24,6 +25,8 @@ import PrivacyPolicy from "./components/pages/PrivacyPolicy/PrivacyPolicy";
 import FAQ from "./components/pages/FAQ/FAQ";
 import Booking from "./components/Booking.jsx";
 import PageNotFound from "./components/PageNotFound";
+import ChatWidget from "./components/ChatWidget";
+
 
 export default function App() {
   return (
@@ -45,6 +48,7 @@ export default function App() {
             <Route path="/booking" element={<Booking />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
+          <ChatWidget />
 
           <Footer />
         </BrowserRouter>

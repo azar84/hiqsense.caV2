@@ -2549,7 +2549,12 @@ select {
     width: 263px;
   }
 }
-
+#chatIframe {
+  position : fixed ;
+  bottom : 20px ;
+  right: 20px ;
+  z-index : 9999 ;
+}
 /* Ends Here */
 
 @media only screen and (min-width: 1025px) and (max-width: 1350px) {
