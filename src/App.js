@@ -48,7 +48,7 @@ export default function App() {
             <Route path="/booking" element={<Booking />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
-          <ChatWidget />
+          
 
           <Footer />
         </BrowserRouter>
