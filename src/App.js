@@ -25,7 +25,7 @@ import PrivacyPolicy from "./components/pages/PrivacyPolicy/PrivacyPolicy";
 import FAQ from "./components/pages/FAQ/FAQ";
 import Booking from "./components/Booking.jsx";
 import PageNotFound from "./components/PageNotFound";
-import ChatWidget from "./components/ChatWidget";
+//import ChatWidget from "./components/ChatWidget";
 
 
 export default function App() {
